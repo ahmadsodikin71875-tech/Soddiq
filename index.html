@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Mancing Soddiq</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Game Mancing</h1>
+      <p>Selamat datang! Tangkap ikan terbaik, kumpulkan poin, dan upgrade peralatanmu.</p>
+    </header>
+
+    <main>
+      <section class="status-panel">
+        <div>
+          <strong>Skor:</strong>
+          <span id="score">0</span>
+        </div>
+        <div>
+          <strong>Level Bait:</strong>
+          <span id="bait-level">1</span>
+        </div>
+        <div>
+          <strong>Energi:</strong>
+          <span id="energy">5</span>
+        </div>
+      </section>
+
+      <section class="game-panel">
+        <div class="controls">
+          <button id="btn-start">Mulai Permainan</button>
+          <button id="btn-cast" disabled>Cast</button>
+          <button id="btn-reel" disabled>Reel</button>
+          <button id="btn-upgrade" disabled>Upgrade Bait</button>
+        </div>
+
+        <div class="info-box">
+          <h2>Status</h2>
+          <p id="game-message">Tekan Mulai untuk memancing.</p>
+        </div>
+      </section>
+
+      <section class="catch-panel">
+        <h2>Riwayat Tangkap</h2>
+        <ul id="catch-log"></ul>
+      </section>
+
+      <section class="fish-panel">
+        <h2>Daftar Ikan</h2>
+        <div class="fish-grid" id="fish-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
